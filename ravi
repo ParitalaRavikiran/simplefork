@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ravikiran Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
     <style>
-        body {
-            font-family: Arial;
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1 { color: #1e40af; }
-        h2 {
-            color: #2563eb;
-            border-bottom: 1px solid #ddd;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        .container { max-width: 1200px; margin: 20px auto; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .product { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .product h3 { margin: 10px 0 5px; }
+        .price { font-size: 18px; font-weight: bold; color: #27ae60; margin: 10px 0; }
+        button { background: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; }
+        button:hover { background: #2980b9; }
     </style>
 </head>
 <body>
-
-    <h1>Ravikiran</h1>
-    <p><b>Student</b></p>
-    <p>📞 8367343777 | </p>
-
-    <h2>Career Objective</h2>
-    <p>
-        Motivated student looking for an opportunity to learn new skills
-        and build a successful career.
-    </p>
-
-    <h2>Education</h2>
-    <p><b>B.Tech - Computer Science</b><br>
-    MITS College | 2023 - 2027</p>
-
-    <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, Python, Java</p>
-
-    <h2>Projects</h2>
-    <p><b>Personal Portfolio Website</b><br>
-    Created a responsive website using HTML and CSS.</p>
-
-    <h2>Certifications</h2>
-    <p>Web Development Fundamentals</p>
-
-    <h2>Languages</h2>
-    <p>English , Telugu</p>
-
+    <header><h1>Shop</h1></header>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Product">
+                <h3>Product 1</h3>
+                <p>Description here</p>
+                <div class="price">$19.99</div>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Product">
+                <h3>Product 2</h3>
+                <p>Description here</p>
+                <div class="price">$29.99</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
